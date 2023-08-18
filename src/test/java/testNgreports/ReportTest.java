@@ -17,6 +17,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import commonUtil.Utility;
+
 public class ReportTest {
 	
 	WebDriver driver;
@@ -55,7 +57,7 @@ public class ReportTest {
 	  extentTest=extenReports.createTest("Search Cucumber");
 			driver.navigate().to("https://www.google.com/");
 			//driver.get("https://www.google.com/");
-			WebElement webelement=driver.findElement(By.id(""));
+			WebElement webelement=driver.findElement(By.id("APjFqb"));
 			webelement.sendKeys("Cucumber");
 			webelement.sendKeys(Keys.ENTER);
 			Assert.assertEquals(driver.getTitle(), "Cucumber - Google Search" );
@@ -65,6 +67,8 @@ public class ReportTest {
   public void teardown(ITestResult result) {
 	  if(ITestResult.FAILURE==result.getStatus()) {
 		  extentTest.fail(result.getThrowable().getMessage());
+		  String Path=Utility.getScreenshotPath(driver);
+		  extentTest.addScreenCaptureFromPath(Path);
 	  }
 	  
 	  driver.close();
