@@ -1,5 +1,6 @@
 package commonUtil;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.openqa.selenium.OutputType;
@@ -10,15 +11,15 @@ public class Utility{
 	
 	public static String getScreenshotPath(WebDriver driver) {
 		TakesScreenshot screen = (TakesScreenshot)driver;
-		File scr=screen.getScreenshotAs(OutputType.FILE);
-		String scrfile= System.getProperty("user.dir");
+		File src=screen.getScreenshotAs(OutputType.FILE);
+		String scrfile= System.getProperty("user.dir")
 		+"/screenshots"
 		+System.currentTimeMillis()
 		+ ".png";
 		
 		File dest=new File(scrfile);
 		try {
-			fileUtils.copyFile(src, dest);
+			FileUtils.copyFile(src, dest);
 		}
 	catch(IOException e) {
 		e.printStackTrace();
