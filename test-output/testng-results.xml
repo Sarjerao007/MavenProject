@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-18T06:03:29 GMT" name="Suite" finished-at="2023-08-18T06:03:29 GMT" duration-ms="150">
+    <groups>
+    </groups>
+    <test started-at="2023-08-18T06:03:29 GMT" name="Test" finished-at="2023-08-18T06:03:29 GMT" duration-ms="83">
+      <class name="parallelScript.Sample1">
+        <test-method signature="JavaTestTest()[pri:0, instance:parallelScript.Sample1@2cd2a21f]" started-at="2023-08-18T06:03:29 GMT" name="JavaTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaTestTest -->
+        <test-method signature="PythonTestTest()[pri:0, instance:parallelScript.Sample1@2cd2a21f]" started-at="2023-08-18T06:03:29 GMT" name="PythonTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PythonTestTest -->
+        <test-method signature="SeleniumTestTest()[pri:0, instance:parallelScript.Sample1@2cd2a21f]" started-at="2023-08-18T06:03:29 GMT" name="SeleniumTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumTestTest -->
+      </class> <!-- parallelScript.Sample1 -->
+      <class name="parallelScript.Sample2">
+        <test-method signature="JavaTestTest()[pri:0, instance:parallelScript.Sample2@2e55dd0c]" started-at="2023-08-18T06:03:29 GMT" name="JavaTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaTestTest -->
+        <test-method signature="PythonTestTest()[pri:0, instance:parallelScript.Sample2@2e55dd0c]" started-at="2023-08-18T06:03:29 GMT" name="PythonTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PythonTestTest -->
+        <test-method signature="SeleniumTestTest()[pri:0, instance:parallelScript.Sample2@2e55dd0c]" started-at="2023-08-18T06:03:29 GMT" name="SeleniumTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumTestTest -->
+      </class> <!-- parallelScript.Sample2 -->
+    </test> <!-- Test -->
+    <test started-at="2023-08-18T06:03:29 GMT" name="Test2" finished-at="2023-08-18T06:03:29 GMT" duration-ms="150">
+      <class name="parallelScript.Sample3">
+        <test-method signature="JavaTestTest()[pri:0, instance:parallelScript.Sample3@247d8ae]" started-at="2023-08-18T06:03:29 GMT" name="JavaTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaTestTest -->
+        <test-method signature="PythonTestTest()[pri:0, instance:parallelScript.Sample3@247d8ae]" started-at="2023-08-18T06:03:29 GMT" name="PythonTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PythonTestTest -->
+        <test-method signature="SeleniumTestTest()[pri:0, instance:parallelScript.Sample3@247d8ae]" started-at="2023-08-18T06:03:29 GMT" name="SeleniumTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumTestTest -->
+        <test-method signature="SeleniumTestTest()[pri:0, instance:parallelScript.Sample3@247d8ae]" started-at="2023-08-18T06:03:29 GMT" name="SeleniumTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumTestTest -->
+        <test-method signature="SeleniumTestTest()[pri:0, instance:parallelScript.Sample3@247d8ae]" started-at="2023-08-18T06:03:29 GMT" name="SeleniumTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumTestTest -->
+        <test-method signature="SeleniumTestTest()[pri:0, instance:parallelScript.Sample3@247d8ae]" started-at="2023-08-18T06:03:29 GMT" name="SeleniumTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumTestTest -->
+        <test-method signature="SeleniumTestTest()[pri:0, instance:parallelScript.Sample3@247d8ae]" started-at="2023-08-18T06:03:29 GMT" name="SeleniumTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumTestTest -->
+        <test-method signature="SeleniumTestTest()[pri:0, instance:parallelScript.Sample3@247d8ae]" started-at="2023-08-18T06:03:29 GMT" name="SeleniumTestTest" finished-at="2023-08-18T06:03:29 GMT" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleniumTestTest -->
+      </class> <!-- parallelScript.Sample3 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
