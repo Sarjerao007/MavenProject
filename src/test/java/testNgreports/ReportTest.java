@@ -5,12 +5,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -26,6 +26,7 @@ public class ReportTest {
 	
 	@BeforeTest
 	public void setupExtent() {
+		
 		extenReports=new ExtentReports();
 		spark=new ExtentSparkReporter("test-output/SparkRport.html");
 		extenReports.attachReporter(spark);
@@ -40,30 +41,31 @@ public class ReportTest {
 	}
   @Test
   public void TutorialTest() {
-	  extenReports.createTest("Search Java tutorial");
+	  extentTest=extenReports.createTest("Search Java tutorial");
 		driver.navigate().to("https://www.google.com/");
 		//driver.get("https://www.google.com/");
 		WebElement webelement=driver.findElement(By.id("APjFqb"));
 		webelement.sendKeys("Java Tutorial");
 		webelement.sendKeys(Keys.ENTER);
-		String title=driver.getTitle();
-		System.out.println("The Page Title is  "+title);
+		Assert.assertEquals(driver.getTitle(), "Java Tutorial - Google Search" );
   }
   @Test
   public void Cucmber() {
 	  
-	  extenReports.createTest("Search Cucumber");
+	  extentTest=extenReports.createTest("Search Cucumber");
 			driver.navigate().to("https://www.google.com/");
 			//driver.get("https://www.google.com/");
-			WebElement webelement=driver.findElement(By.id("APjFqb"));
+			WebElement webelement=driver.findElement(By.id(""));
 			webelement.sendKeys("Cucumber");
 			webelement.sendKeys(Keys.ENTER);
-			String title=driver.getTitle();
-			System.out.println("The Page Title is  "+title);
+			Assert.assertEquals(driver.getTitle(), "Cucumber - Google Search" );
   }
   
   @AfterMethod
-  public void teardown() {
+  public void teardown(ITestResult result) {
+	  if(ITestResult.FAILURE==result.getStatus()) {
+		  extentTest.fail(result.getThrowable().getMessage());
+	  }
 	  
 	  driver.close();
   }
