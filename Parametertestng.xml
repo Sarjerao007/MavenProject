@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" thread-count="2" parallel="tests">
+<parameter name="browser" value="Chrome"  />
   <test name="Test">
     <classes>
-      <class name="testNgreports.ReportTest"/>
+      <class name="parameterTestNg.ParameterTestTest"/>
+   
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
