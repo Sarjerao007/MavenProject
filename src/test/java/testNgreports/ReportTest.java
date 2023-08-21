@@ -67,8 +67,8 @@ public class ReportTest {
   public void teardown(ITestResult result) {
 	  if(ITestResult.FAILURE==result.getStatus()) {
 		  extentTest.fail(result.getThrowable().getMessage());
-		  String Path=Utility.getScreenshotPath(driver);
-		  extentTest.addScreenCaptureFromPath(Path);
+//		  String Path=Utility.getScreenshotPath(driver);
+//		  extentTest.addScreenCaptureFromPath(Path);
 	  }
 	  
 	  driver.close();
