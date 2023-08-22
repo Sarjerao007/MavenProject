@@ -20,7 +20,7 @@ public class PropertyClass {
 	@BeforeMethod
 	public void InitializeDriver() throws IOException{
 	String path=System.getProperty("user.dir")+
-			"//src//test//resources//config.properties";
+			"//src//test//resources//config//config.properties";
 	prop=new Properties();
 	FileInputStream fin = new FileInputStream(path);
 	prop.load(fin);
